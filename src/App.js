@@ -16,18 +16,29 @@ const styles = {
 }
 
 class News extends React.Component{
-  // constructor(props){
-  //   super(props);
-  // }
+
+  state = {
+    date: new Date(),
+    score: 5
+  };
+
+  // change state score - asynchronic 
+  componentDidMount(){
+    let loading = true;
+    this.setState({ score: 7 }, () => {
+      loading = false;
+    });
+  }
 
   render() {
     const { header, intro } = this.props;
+    const { score } = this.state;
 
     return(
       <div className="news">
       <h2>{ header }</h2>
       <p style={styles}>{ intro }</p>
-      <p style={styles.para}>{ intro }</p>
+      <p style={styles.para}>{ score }</p>
     </div>
     );
   }
