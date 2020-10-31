@@ -2,11 +2,10 @@ import React, { Fragment } from 'react';
 
 import './App.css';
 
-// const News = () => <p>Hello !</p>;
-function News( { header, intro } ) { // function News( props ) {
-  // const { header, intro } = props;
+
+function News( { header, intro } ) {
   return(
-    <div>
+    <div className="news">
       <h2>{ header }</h2>
       <p>{ intro }</p>
     </div>
@@ -18,12 +17,11 @@ const data = [
     header: 'Nagłówek 1', intro: 'Intro 1',
   }, {
     header: 'Nagłówek 2', intro: 'Intro 2',
-  }, { 
+  }, {
     header: 'Nagłówek 3', intro: 'Intro 3',
-  } 
+  }
 ];
 
-// data.map( (elem, index) )
 
 function App() {
   return(
