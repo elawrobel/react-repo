@@ -28,9 +28,9 @@ const data = [
 function App() {
   return(
     <Fragment>
-      { data.map( (elem, index) => {
-        return <News header={elem.header} intro={elem.intro} />;
-      }) }
+      { data.map( (elem, index) => (
+        <News key={`news-${index}`} header={elem.header} intro={elem.intro} />
+      )) }
     </Fragment>
   );
 }
