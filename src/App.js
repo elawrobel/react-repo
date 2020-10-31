@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 import './App.css';
 
@@ -15,44 +15,46 @@ const styles = {
   }
 }
 
-class News extends React.Component{
+// class News extends React.Component{
 
-  state = {
-    date: new Date(),
-    score: 5
-  };
+//   state = {
+//     date: new Date(),
+//     score: 5
+//   };
 
-  // change state score - asynchronic 
-  componentDidMount(){
-    let loading = true;
-    this.setState({ score: 7 }, () => {
-      loading = false;
-    });
-  }
+//   // change state score - asynchronic 
+//   componentDidMount(){
+//     let loading = true;
+//     this.setState({ score: 7 }, () => {
+//       loading = false;
+//     });
+//   }
 
-  render() {
-    const { header, intro } = this.props;
-    const { score } = this.state;
+//   render() {
+//     const { header, intro } = this.props;
+//     const { score } = this.state;
 
-    return(
-      <div className="news">
+//     return(
+//       <div className="news">
+//       <h2>{ header }</h2>
+//       <p style={styles}>{ intro }</p>
+//       <p style={styles.para}>{ score }</p>
+//     </div>
+//     );
+//   }
+// }
+
+function News( { header, intro } ) {
+  const [ score, setScore ] = useState(5);
+
+  return(
+    <div className="news">
       <h2>{ header }</h2>
       <p style={styles}>{ intro }</p>
       <p style={styles.para}>{ score }</p>
     </div>
-    );
-  }
+  );
 }
-
-// function News( { header, intro } ) {
-//   return(
-//     <div className="news">
-//       <h2>{ header }</h2>
-//       <p style={styles}>{ intro }</p>
-//       <p style={styles.para}>{ intro }</p>
-//     </div>
-//   );
-// }
 
 const data = [
   {
