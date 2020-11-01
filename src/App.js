@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState } from 'react' ;
 
 import './App.css';
 
@@ -13,7 +13,7 @@ const styles = {
   para: {
     color: red
   }
-}
+};
 
 // class News extends React.Component{
 

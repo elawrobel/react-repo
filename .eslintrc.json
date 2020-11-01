@@ -1,0 +1,14 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "always"],
+    "computed-property-spacing": ["error", "always"],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "no-var": "error",
+    "indent": ["error", 2],
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": "error"
+  }
+}
