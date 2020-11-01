@@ -1,68 +1,12 @@
-import React, { Fragment, useState } from 'react' ;
+import React, { Fragment } from 'react' ;
 
 import './App.css';
-
-// CSS in JS
-const red = '#f53b57';
-
-const styles = {
-  backgroundColor: '#808e9b',
-  border: '1px solid black',
-  padding: 8,
-  color: '#d2dae2',
-  para: {
-    color: red
-  }
-};
-
-// class News extends React.Component{
-
-//   state = {
-//     date: new Date(),
-//     score: 5
-//   };
-
-//   // change state score - asynchronic 
-//   componentDidMount(){
-//     let loading = true;
-//     this.setState({ score: 7 }, () => {
-//       loading = false;
-//     });
-//   }
-
-//   render() {
-//     const { header, intro } = this.props;
-//     const { score } = this.state;
-
-//     return(
-//       <div className="news">
-//       <h2>{ header }</h2>
-//       <p style={styles}>{ intro }</p>
-//       <p style={styles.para}>{ score }</p>
-//     </div>
-//     );
-//   }
-// }
-
-function News( { header, intro } ) {
-  const [ score, setScore ] = useState(5);
-
-  return(
-    <div className="news">
-      <h2>{ header }</h2>
-      <p style={styles}>{ intro }</p>
-      <p style={styles.para}>{ score }</p>
-    </div>
-  );
-}
+import News from './components/News';
 
 const data = [
-  {
-    header: 'Nagłówek 1', intro: 'Intro 1',
-  }, {
-    header: 'Nagłówek 2', intro: 'Intro 2',
-  }, {
-    header: 'Nagłówek 3', intro: 'Intro 3',
+  { id: 1, author: 'Jan Kowalski', title: 'Pilne: Co to był za dzień!', intro: 'Tego świat jeszcze nie widział' },
+  { id: 2, author: 'Jan Kowalski', title: 'Wszyscy zazdroszą Polakom!', intro: 'Takiego clickbajtowego tytułu jeszcze nikt nie wymyślił' },
+  { id: 3, author: 'Jan Kowalski', title: 'Adam Małysz Zgolił wąs', intro: 'Po przegranym zakładzie z Piotrem Żyłą nasz mistrz olimpijski zgolił wąsy'
   }
 ];
 
@@ -70,8 +14,13 @@ const data = [
 function App() {
   return(
     <Fragment>
-      { data.map( (elem, index) => (
-        <News key={`news-${index}`} header={elem.header} intro={elem.intro} />
+      { data.map( ( elem ) => (
+        <News 
+          key={`news-${ elem.id }`}
+          header={elem.title}
+          intro={elem.intro}
+          author={elem.author}
+        />
       )) }
     </Fragment>
   );
