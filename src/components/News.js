@@ -13,6 +13,10 @@ const styles = {
   para: {
     color: '#1e272e',
     backgroundColor: '#ffc048',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    maxWidth: '25ch',
   },
 };
 

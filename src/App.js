@@ -2,6 +2,8 @@ import React, { Fragment } from 'react' ;
 
 import './App.css';
 import News from './components/News';
+import Uuid from './components/Uuid';
+import Timer from './components/Timer';
 
 const data = [
   { id: 1, author: 'Jan Kowalski', title: 'Pilne: Co to był za dzień!', intro: 'Tego świat jeszcze nie widział' },
@@ -14,6 +16,7 @@ const data = [
 function App() {
   return(
     <Fragment>
+      <Timer />
       { data.map( ( elem ) => (
         <News 
           key={`news-${ elem.id }`}
@@ -22,6 +25,7 @@ function App() {
           author={elem.author}
         />
       )) }
+      <Uuid />
     </Fragment>
   );
 }
