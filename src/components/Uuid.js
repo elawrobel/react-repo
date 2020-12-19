@@ -22,7 +22,7 @@ function Uuid() {
 
   return (
     <footer style={styles} className="Uuid">
-      <p style={styles.p}>Your Version 4 UUID: {displayUuid()}</p>
+      <p style={styles.p}>Twoja wersja 4 UUID: {displayUuid()}</p>
     </footer>
   );
 }
