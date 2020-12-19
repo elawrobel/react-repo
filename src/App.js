@@ -2,6 +2,7 @@ import React, { Fragment } from 'react' ;
 
 import './App.css';
 import News from './components/News';
+import Uuid from './components/Uuid';
 
 const data = [
   { id: 1, author: 'Jan Kowalski', title: 'Pilne: Co to był za dzień!', intro: 'Tego świat jeszcze nie widział' },
@@ -22,6 +23,7 @@ function App() {
           author={elem.author}
         />
       )) }
+      <Uuid />
     </Fragment>
   );
 }
