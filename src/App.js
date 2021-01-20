@@ -4,6 +4,7 @@ import './App.css';
 import News from './components/News';
 import Uuid from './components/Uuid';
 import Timer from './components/Timer';
+import Header from './components/Header';
 
 const data = [
   { id: 1, author: 'Jan Kowalski', title: 'Pilne: Co to był za dzień!', intro: 'Tego świat jeszcze nie widział' },
@@ -16,6 +17,7 @@ const data = [
 function App() {
   return(
     <Fragment>
+      <Header />
       <Timer />
       { data.map( ( elem ) => (
         <News 
