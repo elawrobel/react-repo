@@ -9,7 +9,7 @@ function Uuid() {
     border: '1px solid #808e9b',
     backgroundColor: 'rgb(210 218 226 / 48%)',
     padding: 8,
-    position: 'fixed',
+    // position: 'fixed',
     bottom: 0,
     width: '100%',
     textAlign: 'center',
@@ -21,9 +21,9 @@ function Uuid() {
   };
 
   return (
-    <footer style={styles} className="Uuid">
+    <div style={styles} className="Uuid">
       <p style={styles.p}>Twoja wersja 4 UUID: {displayUuid()}</p>
-    </footer>
+    </div>
   );
 }
 export default Uuid;
