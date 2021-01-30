@@ -26,6 +26,8 @@ function Card({ headline, image, excerpt, showMore }) {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 8,
   };
 
   return (
