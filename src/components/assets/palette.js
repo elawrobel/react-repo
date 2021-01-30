@@ -23,9 +23,10 @@ const palette = {
   darkGrey: '#607D8B',
 };
 
-export default (color) => {
+const Palette = (color) => {
   if (!(color in palette)) {
     throw new Error( 'Color is not defined in palette' );
   }
   return palette[ color ];
 };
+export default Palette;

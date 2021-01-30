@@ -1,7 +1,6 @@
 import React from 'react';
 
 import palette from '../assets/palette';
-import { faFileExcel } from '@fortawesome/free-solid-svg-icons';
 
 function Textarea(props) {
   const { color, bgColor, borderSize, borderRadius, borderColor } = props;
@@ -14,7 +13,6 @@ function Textarea(props) {
     outline: 0,
     backgroundColor: palette(bgColor),
     display: 'flex',
-
     width: '70%',
     container: {
       padding: 10
