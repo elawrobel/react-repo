@@ -1,7 +1,7 @@
 import React from 'react';
 
 const styles = {
-  padding: 8,
+  padding: 13,
 };
 
 

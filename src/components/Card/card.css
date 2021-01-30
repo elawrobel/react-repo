@@ -10,13 +10,8 @@
   margin-top: 8px;
 }
 
-.card__excerpt {
-  margin-top: 16px;
-}
-
 .card__showmore {
   border: 0;
-  padding: 12px;
   cursor: pointer;
   background-color: transparent;
   transition: opacity 0.3s ease;
