@@ -4,10 +4,6 @@ import Logo from './Logo';
 import Menu from './Menu';
 import NavLink from './NavLink';
 
-import {
-  Link
-} from 'react-router-dom';
-
 const styles = {
   backgroundColor: 'rgb(210 218 226 / 48%)',
   padding: 8,

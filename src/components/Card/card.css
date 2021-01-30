@@ -1,0 +1,45 @@
+.card__block {
+  border-radius: 3px;
+  border: 2px solid #ccc;
+}
+
+.card__header {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.card__excerpt {
+  margin-top: 16px;
+}
+
+.card__showmore {
+  border: 0;
+  padding: 12px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+}
+
+.card__showmore:hover {
+  opacity: 0.5;
+}
+
+.card__content {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding: 15px;
+  background-color: #d1d9e25c;
+  color: #000;
+  display: none;
+}
+
+.card__content.is-open {
+  display: block;
+  text-align: left;
+}
+
+.card__media img{
+ width: 100%;
+}

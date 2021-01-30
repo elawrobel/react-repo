@@ -1,13 +1,5 @@
 import React, { Fragment } from 'react' ;
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
-
-import SecureRoute from './components/SecureRoute';
-
 import './App.css';
 
 import Timer from './components/Timer';
@@ -21,18 +13,15 @@ import Articles from './pages/Articles';
 
 function App() {
   return(
-    <Router>
-      <Fragment>
-        <Header />
-        <Timer />
-        <Content>
-          <Articles />
-          <Contact />
-        </Content>
-        <Footer />
-      </Fragment>
-    </Router>
-
+    <Fragment>
+      <Header />
+      <Timer />
+      <Content>
+        <Articles />
+        <Contact />
+      </Content>
+      <Footer />
+    </Fragment>
   );
 }
 
