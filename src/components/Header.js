@@ -15,7 +15,7 @@ import Menu from './Menu';
 library.add(fas);
 
 const styles = {
-  backgroundColor: 'rgb(210 218 226 / 48%)',
+  backgroundColor: '#f7f7f7',
   padding: 8,
   display: 'flex',
   justifyContent: 'space-between',
@@ -23,7 +23,8 @@ const styles = {
 
   link: {
     padding: 10,
-    color: '#000',
+    color: '#6c63ff',
+    fontWeight: 'bold',
   },
 };
 

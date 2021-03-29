@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const styles = {
   border: '1px dotted #808e9b',
-  backgroundColor: 'rgb(210 218 226 / 48%)',
+  backgroundColor: '#e6e6e6',
   padding: 8,
   textAlign: 'right',
   fontSize: '10px',

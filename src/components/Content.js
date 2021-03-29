@@ -8,7 +8,7 @@ const styles = {
 
 function Content ({ children }) {
   return(
-    <main style={styles}>{ children }</main>
+    <main style={styles} id="main">{ children }</main>
   );
 }
 

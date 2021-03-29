@@ -4,6 +4,8 @@ import News from '../components/News';
 import { Card } from '../components/Card';
 import Title from '../components/Title';
 
+import mockupImage from '../components/assets/images/article.svg';
+
 const data = [
   { id: 1, author: 'Jan Kowalski', title: 'Pilne: Co to był za dzień!', intro: 'Tego świat jeszcze nie widział' },
   { id: 2, author: 'Jan Kowalski', title: 'Wszyscy zazdroszą Polakom!', intro: 'Takiego clickbajtowego tytułu jeszcze nikt nie wymyślił' },
@@ -15,7 +17,7 @@ const articles = [
   { 
     id: 1, 
     title: 'Pilne: Co to był za dzień!', 
-    image: 'https://picsum.photos/300/200',
+    image: mockupImage,
     excerpt: 'Tego świat jeszcze nie widział',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   },
@@ -23,7 +25,7 @@ const articles = [
     id: 2, 
     author: 'Jan Kowalski', 
     title: 'Wszyscy zazdroszą Polakom!', 
-    image: 'https://picsum.photos/300/200?grayscale',
+    image: mockupImage,
     excerpt: 'Takiego tytułu jeszcze nie było',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   },
@@ -31,14 +33,15 @@ const articles = [
     id: 3, 
     author: 'Jan Kowalski', 
     title: 'Wyjątkoowa rozgrywka', 
-    image: 'https://picsum.photos/seed/picsum/300/200',
+    image: mockupImage,
     excerpt: 'Takie dni jak te tez sie zdazaja!',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   }
 ];
 
 const styles = {
-  padding: 16,
+  marginTop: 16,
+  marginBottom: 16,
 };
 
 function Content () {

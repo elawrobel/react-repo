@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logoImg from './assets/logo.png';
+import logoImg from './assets/images/logo_2.svg';
 
 const styles = {
   height: 50,

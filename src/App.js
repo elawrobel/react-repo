@@ -19,13 +19,37 @@ import Articles from './pages/Articles';
 
 
 function App() {
+
+  const styles = {
+    position: 'absolute',
+    left: '-999px',
+    width: '1px',
+    height: '1px',
+    top: 'auto',
+
+    '&:focus': {
+      background: '#efefef',
+      display: 'inline-block',
+      height: 'auto',
+      width: 'auto',
+      position: 'static',
+      margin: 'auto',
+    },
+
+    '&:hover': {
+      background: '#40a9ff'
+    }
+  };
+
+
   return(
     <Router>
 
       <Fragment>
+        <a class="skip-to-content-link" href="#main" style={styles} >Skip to content</a>
         <Header />
         <Timer />
-        <Content>
+        <Content >
           <Switch>
             {/* <Route path="/">
               <Home />

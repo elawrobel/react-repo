@@ -1,6 +1,7 @@
 .card__block {
   border-radius: 3px;
-  border: 2px solid #ccc;
+  border: 2px solid #e6e6e6;
+  padding: 8px;
 }
 
 .card__header {
