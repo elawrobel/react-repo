@@ -5,14 +5,15 @@ import Scoring from './Scoring';
 
 const styles = {
   border: '1px solid #808e9b',
-  backgroundColor: 'rgb(210 218 226 / 48%)',
+  backgroundColor: '#e6e6e6',
   padding: 8,
   header:{
     color: '#1e272e',
+    fontSize: '24px',
   },
   para: {
-    color: '#1e272e',
-    backgroundColor: '#ffc048',
+    color: '#ffffff',
+    backgroundColor: '#6c63ff',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -25,11 +26,13 @@ function News ( { header, intro, author } ) {
   const [ score ] = useState( 5 );
 
   return(
-    <div style={styles} className="news col-12 col-md-4">
-      <h2 style={styles.header}>{ header }</h2>
-      <p style={styles.para}>{ intro }</p>
-      <Author author={author} />
-      <Scoring score={score} />
+    <div className="col-12 col-md-4">
+      <div className="news" style={styles}>
+        <h3 style={styles.header}>{ header }</h3>
+        <p style={styles.para}>{ intro }</p>
+        <Author author={author} />
+        <Scoring score={score} />
+      </div>
     </div>
   );
 }

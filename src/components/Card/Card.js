@@ -31,16 +31,18 @@ function Card({ headline, image, excerpt, showMore }) {
   };
 
   return (
-    <div className="card__block col-12 col-md-4">
-      <CardHeader headline={headline} />
-      <CardMedia image={image} headline={headline} />
-      <div style={styles}>
-        <CardExcerpt excerpt={excerpt} />
-        <CardShowMoreButton clickHandler={reveal}>
-          <FontAwesomeIcon icon={ [ 'fas', 'arrow-down' ] } />
-        </CardShowMoreButton>
+    <div className="col-12 col-md-4">
+      <div className="card__block">
+        <CardHeader headline={headline} />
+        <CardMedia image={image} headline={headline} />
+        <div style={styles}>
+          <CardExcerpt excerpt={excerpt} />
+          <CardShowMoreButton clickHandler={reveal}>
+            <FontAwesomeIcon icon={ [ 'fas', 'arrow-down' ] } />
+          </CardShowMoreButton>
+        </div>
+        <CardReveal content={showMore} isOpened={isOpen} />
       </div>
-      <CardReveal content={showMore} isOpened={isOpen} />
     </div>
   );
 }

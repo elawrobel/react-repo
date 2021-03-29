@@ -25,8 +25,8 @@ function Input(props) {
 
   return (
     <div style={styles.container}>
-      <label style={styles.label}>E-mail:</label>
-      <input style={styles} />
+      <label style={styles.label} htmlFor="email">E-mail:</label>
+      <input style={styles} for="email"/>
     </div>
   );
 }

@@ -25,8 +25,8 @@ function Textarea(props) {
 
   return (
     <div style={styles.container}>
-      <label style={styles.label}>Text:</label>
-      <textarea style={styles} />
+      <label style={styles.label} htmlFor="text">Text:</label>
+      <textarea style={styles} for="text"/>
     </div>
   );
 }

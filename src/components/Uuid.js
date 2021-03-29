@@ -7,16 +7,16 @@ function Uuid() {
 
   const styles = {
     border: '1px solid #808e9b',
-    backgroundColor: 'rgb(210 218 226 / 48%)',
+    backgroundColor: '#e6e6e6',
     padding: 8,
-    // position: 'fixed',
+    margin: 0,
     bottom: 0,
     width: '100%',
     textAlign: 'center',
     p:{
       color: '#1e272e',
       fontSize: '10px',
-      fontWeight: 'bold',
+      margin: 0,
     },
   };
 
